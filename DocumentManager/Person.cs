@@ -21,6 +21,7 @@ namespace DocumentManager
                 firstName = value;
             }
         }
+
         public string LastName
         {
             get
