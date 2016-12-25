@@ -10,7 +10,8 @@ namespace DocumentManager
     {
         static void Main(string[] args)
         {
-            RunAccount();
+            //RunAccount();
+            RunPerson();
            
         }
 
@@ -48,6 +49,27 @@ namespace DocumentManager
             Console.WriteLine(amountDelegate);
             Console.WriteLine(amountDelegatePre);
             Console.ReadKey();
+        }
+
+        public static void RunPerson()
+        {
+            Person[] persons = {
+            new Person("peter","gao"),
+            new Person("rain", "hig"),
+            new Person("lt","xiong"),
+            new Person("p","")
+            };
+            Console.WriteLine("sort person================");
+            //Console.WriteLine(PersonAction.SortPerson(persons));
+            PersonAction.SortPerson(persons);
+            Console.WriteLine("show person================");
+            PersonAction.ShowPerson(persons);
+            Console.WriteLine("show lastname================");
+            PersonAction.ShowPersonFamilyName(persons);
+            Console.WriteLine("find person================");
+            Console.WriteLine(PersonAction.FindPerson(persons));
+            Console.ReadKey();
+
         }
     }
 }
