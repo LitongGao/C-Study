@@ -28,7 +28,6 @@ namespace WindowsFormsApplication1
         //    }
         //}
         
-
         public Form1()
         {
             InitializeComponent();
@@ -49,8 +48,6 @@ namespace WindowsFormsApplication1
             public string Message{get;set;}
         }
 
-
-
         protected void OnAction(object sender, ActionCancelEventArgs ev)
         {
             if(Actions !=null)
@@ -60,6 +57,7 @@ namespace WindowsFormsApplication1
             //ActionCancelEventArgs e = new ActionCancelEventArgs();
             //Actions(this, e);
         }
+
         private void Buttone_Click(object sender, EventArgs e)
         {
             if(((Button)sender).Name=="buttonOne")
