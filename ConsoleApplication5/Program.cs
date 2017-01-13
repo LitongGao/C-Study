@@ -23,6 +23,7 @@ namespace ConsoleApplication5
                 ProcessAndDisplay(operations[i], 1.414);
 
             }
+            Anonymous.ShowInfo();
             Console.ReadKey();
         }
 
