@@ -15,10 +15,10 @@ namespace CollectionPractices
         private string lastName;
         private string country;
         private int wins;
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Country { get; set; }
-        public int Wins { get; set; }
+        public string FirstName { get { return firstName; }  }
+        public string LastName { get { return lastName; }  }
+        public string Country { get {return country;} set {country = value;} }
+        public int Wins { get { return wins; } set { wins = value; } }
         #endregion
         public Racer(string firstname, string lastname, string country, int wins)
         {
@@ -36,18 +36,23 @@ namespace CollectionPractices
 
         //Method
         #region
-        public override string Tostring()
+        public override string ToString()
         {
             return String.Format("{0}, {1}", FirstName, LastName);
         }
 
-        public string Tostring(string format, IFormatProvider formatProvider)
+        public string ToString(string format)
         {
-            switch(format.ToUpper())
+            return ToString(format, null);
+        }
+
+        public string ToString(string format, IFormatProvider formatProvider)
+        {
+            switch (format.ToUpper())
             {
                 case null:
                 case "N":
-                    return Tostring();
+                    return ToString();
                 case "F":
                     return FirstName;
                 case "L":
@@ -56,14 +61,19 @@ namespace CollectionPractices
                     return Country;
                 case "W":
                     return Wins.ToString();
+                case "A":
+                    return String.Format("{0}, {1}, Wins:{2}", ToString(), Country, Wins);
                 default:
                     throw new FormatException(String.Format(formatProvider, "Format {0}, is not support", format));
             }
         }
 
-        public string ToString(string format)
+        public int CompareTo(Racer other)
         {
-            return Tostring(format, null);
+            int compare = this.LastName.CompareTo(other.LastName);
+            if (compare == 0)
+                return this.FirstName.CompareTo(other.FirstName);
+            return compare;
         }
         #endregion
     }
