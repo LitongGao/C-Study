@@ -29,6 +29,9 @@ namespace CollectionPractices
             RacerAction racerA = new RacerAction();
             //racerA.ShowRacer();
             racerA.ShowInputRacer(racerList,"w");
+            racerList.Sort(new RacerSort(RacerSort.CompareType.Wins));
+            racerA.ShowInputRacer(racerList, "a");
+            Console.ReadKey();
         }
     }
 }

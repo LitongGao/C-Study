@@ -40,7 +40,7 @@ namespace CollectionPractices
                 Console.WriteLine(r.ToString(format));
                 
             }
-            Console.ReadKey();
+            //Console.ReadKey();
         }
 
 
