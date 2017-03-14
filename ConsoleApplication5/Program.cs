@@ -24,6 +24,8 @@ namespace ConsoleApplication5
 
             }
             Anonymous.ShowInfo();
+            TestDel();
+            InvokeDel();
             Console.ReadKey();
         }
 
@@ -36,7 +38,7 @@ namespace ConsoleApplication5
             };
             for (int i = 0; i < operations.Length; i++)
             {
-                Console.WriteLine("Using operations[{0}]", i);
+                Console.WriteLine("Using operations in InvokeDel [{0}]", i);
                 ProcessAndDisplay(operations[i], 2.0);
                 ProcessAndDisplay(operations[i], 7.94);
                 ProcessAndDisplay(operations[i], 1.414);
@@ -65,7 +67,7 @@ namespace ConsoleApplication5
             };
             Console.WriteLine(anonDel("Start of string"));
             Console.WriteLine(anotherDel("Another of string "));
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }
