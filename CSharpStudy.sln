@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsPractices", "Docume
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionPractices", "CollectionPractices\CollectionPractices.csproj", "{E855B0D4-4570-4798-A0BF-19E4FABBBFFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerifySpecialFile", "VerifySpecialFile\VerifySpecialFile.csproj", "{18114DF0-342A-486E-A3DD-C20E2DDB08C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{E855B0D4-4570-4798-A0BF-19E4FABBBFFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E855B0D4-4570-4798-A0BF-19E4FABBBFFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E855B0D4-4570-4798-A0BF-19E4FABBBFFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18114DF0-342A-486E-A3DD-C20E2DDB08C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18114DF0-342A-486E-A3DD-C20E2DDB08C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18114DF0-342A-486E-A3DD-C20E2DDB08C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18114DF0-342A-486E-A3DD-C20E2DDB08C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
