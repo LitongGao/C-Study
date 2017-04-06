@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionPractices", "Coll
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerifySpecialFile", "VerifySpecialFile\VerifySpecialFile.csproj", "{18114DF0-342A-486E-A3DD-C20E2DDB08C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetRegeditKey", "GetRegeditKey\GetRegeditKey.csproj", "{3809FA53-551F-417D-A45A-B84101D1B0DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIATest", "UIATest\UIATest.csproj", "{9D2036BC-6554-4E49-9B30-D36516051764}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{18114DF0-342A-486E-A3DD-C20E2DDB08C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18114DF0-342A-486E-A3DD-C20E2DDB08C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18114DF0-342A-486E-A3DD-C20E2DDB08C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3809FA53-551F-417D-A45A-B84101D1B0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3809FA53-551F-417D-A45A-B84101D1B0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3809FA53-551F-417D-A45A-B84101D1B0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3809FA53-551F-417D-A45A-B84101D1B0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D2036BC-6554-4E49-9B30-D36516051764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D2036BC-6554-4E49-9B30-D36516051764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D2036BC-6554-4E49-9B30-D36516051764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D2036BC-6554-4E49-9B30-D36516051764}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
