@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetRegeditKey", "GetRegedit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIATest", "UIATest\UIATest.csproj", "{9D2036BC-6554-4E49-9B30-D36516051764}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream", "Stream\Stream.csproj", "{F702284A-9DF9-4296-997B-997DA7CB436F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{9D2036BC-6554-4E49-9B30-D36516051764}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D2036BC-6554-4E49-9B30-D36516051764}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D2036BC-6554-4E49-9B30-D36516051764}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F702284A-9DF9-4296-997B-997DA7CB436F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F702284A-9DF9-4296-997B-997DA7CB436F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F702284A-9DF9-4296-997B-997DA7CB436F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F702284A-9DF9-4296-997B-997DA7CB436F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
