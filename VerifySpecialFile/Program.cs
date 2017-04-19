@@ -11,7 +11,10 @@ namespace VerifySpecialFile
     {
         static void Main(string[] args)
         {
-            VerifySpecialFileIsExist("Pearl.Plugins.Sync.dl");
+            //VerifySpecialFileIsExist("Pearl.Plugins.Sync.dl");
+            IOAction io = new IOAction();
+            IOAction.CopyFile(@"E:\software\UIAutomationt\UIAutomationt", @"E:\Logs\copy");
+            //IOAction.RemoveFile(@"E:\Logs", "*.txt");
             Console.ReadKey();
         }
 
