@@ -43,6 +43,7 @@
             this.btnRemoveAll = new System.Windows.Forms.Button();
             this.RemovedFileName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnShowFiles = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,7 +138,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(285, 193);
+            this.btnRemove.Location = new System.Drawing.Point(178, 201);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(75, 23);
             this.btnRemove.TabIndex = 8;
@@ -147,7 +148,7 @@
             // 
             // btnRemoveAll
             // 
-            this.btnRemoveAll.Location = new System.Drawing.Point(285, 236);
+            this.btnRemoveAll.Location = new System.Drawing.Point(285, 201);
             this.btnRemoveAll.Name = "btnRemoveAll";
             this.btnRemoveAll.Size = new System.Drawing.Size(75, 23);
             this.btnRemoveAll.TabIndex = 9;
@@ -171,11 +172,22 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Removed file";
             // 
+            // btnShowFiles
+            // 
+            this.btnShowFiles.Location = new System.Drawing.Point(178, 261);
+            this.btnShowFiles.Name = "btnShowFiles";
+            this.btnShowFiles.Size = new System.Drawing.Size(182, 23);
+            this.btnShowFiles.TabIndex = 12;
+            this.btnShowFiles.Text = "Show Files";
+            this.btnShowFiles.UseVisualStyleBackColor = true;
+            this.btnShowFiles.Click += new System.EventHandler(this.btnShowFiles_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(402, 350);
+            this.Controls.Add(this.btnShowFiles);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.RemovedFileName);
             this.Controls.Add(this.btnRemoveAll);
@@ -203,7 +215,7 @@
 
         private System.Windows.Forms.Button btnDownload;
         private System.Windows.Forms.TextBox SourceFilePath;
-        private System.Windows.Forms.TextBox TargetFilePath;
+        internal System.Windows.Forms.TextBox TargetFilePath;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox chkOverWrite;
@@ -215,6 +227,7 @@
         private System.Windows.Forms.Button btnRemoveAll;
         private System.Windows.Forms.TextBox RemovedFileName;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnShowFiles;
     }
 }
 
