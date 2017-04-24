@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream", "Stream\Stream.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownLoadFileTool", "DownLoadFileTool\DownLoadFileTool.csproj", "{871D817E-948B-4D4E-B127-A499F20FD43D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Reflection\Reflection.csproj", "{65E655CC-1037-4645-B331-C238D3D8D1F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{871D817E-948B-4D4E-B127-A499F20FD43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{871D817E-948B-4D4E-B127-A499F20FD43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{871D817E-948B-4D4E-B127-A499F20FD43D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65E655CC-1037-4645-B331-C238D3D8D1F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65E655CC-1037-4645-B331-C238D3D8D1F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65E655CC-1037-4645-B331-C238D3D8D1F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65E655CC-1037-4645-B331-C238D3D8D1F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
