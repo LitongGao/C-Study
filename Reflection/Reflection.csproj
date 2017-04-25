@@ -54,6 +54,10 @@
       <Project>{e855b0d4-4570-4798-a0bf-19e4fabbbffb}</Project>
       <Name>CollectionPractices</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DelegateBubbleSorter\DelegateBubbleSorter.csproj">
+      <Project>{54669b3e-0c1a-43bf-9215-48d7a70d5c4e}</Project>
+      <Name>DelegateBubbleSorter</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -6,12 +6,20 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.Runtime.Serialization;
 using System.Runtime.Remoting;
+using CollectionPractices;
+using DelegateBubbleSorter;
 
 namespace Reflection
 {
     class Program
     {
         static void Main(string[] args)
+        {
+            GetObject("CollectionPractices", "Racer");
+            Console.ReadKey();
+        }
+
+        public static void GetObject()
         {
             ObjectHandle oHandle = Activator.CreateInstance("CollectionPractices", "CollectionPractices.Racer");
             Object p = oHandle.Unwrap();
@@ -33,7 +41,28 @@ namespace Reflection
             {
                 Console.WriteLine(mi.Name);
             }
-            Console.ReadKey();
+        }
+
+        public static void GetObject(string assemblyName, string className)
+        {
+            Assembly asm = Assembly.Load(assemblyName);
+            Type t = asm.GetType((assemblyName+ '.' + className));           
+            Object[] constructParms = new Object[] { "Peter", "Gao", "China" };
+            Racer obj = (Racer)Activator.CreateInstance(t,constructParms);
+            MethodInfo mi = t.GetMethod("CompareTo");
+            Racer test = new Racer();
+            object[] parameters = new object[] { test };
+            mi.Invoke(obj, BindingFlags.Public, Type.DefaultBinder, parameters, null);
+            Console.WriteLine(mi.Name);
+            Console.WriteLine(obj.ToString("A"));
+        }
+
+        public static void GetDelegate()
+        {
+            BubbleSorter bs = new BubbleSorter();
+            Assembly asm = Assembly.Load("DelegateBubbleSorter");
+            Type t = Type.GetType("DelegateBubbleSorter.BubbleSorter");
+            BubbleSorter.Comparison method = (BubbleSorter.Comparison)Delegate.CreateDelegate(t, bs, "Sort");
         }
     }
 }

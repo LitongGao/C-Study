@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DelegateBubbleSorter
 {
 
-    class BubbleSorter
+    public class BubbleSorter
     {
         public delegate bool Comparison(object x, object y);
         public static void Sort(object[] sortArray, Comparison comparison)
