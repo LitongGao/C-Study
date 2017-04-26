@@ -16,6 +16,7 @@ namespace CollectionPractices
             //List<int> intList = new List<int>();
             //List<Racer> racerList = new List<Racer>();
             //racerList.Capacity = 10;
+            /*
             Racer graham = new Racer("Graham", "Hill", "UK", 6);
             Racer emeron = new Racer("Emerson", "Fitt", "Brazil", 12);
             Racer mario = new Racer("Mario", "Andri", "USA", 12);
@@ -32,6 +33,9 @@ namespace CollectionPractices
             racerList.Sort(new RacerSort(RacerSort.CompareType.Wins));
             racerA.ShowInputRacer(racerList, "a");
             Console.ReadKey();
+            */
+            DictTest dt = new DictTest();
+            dt.FindMethodForDict();
         }
     }
 }
