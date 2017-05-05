@@ -16,12 +16,12 @@ namespace WcfServices.Hosting
         {
             using (ServiceHost host = new ServiceHost(typeof(CalculatorService)))
             {
-                host.AddServiceEndpoint(typeof(ICalculator), new WSHttpBinding(), "http://127.0.0.1:9999/calculatorservice");
+                host.AddServiceEndpoint(typeof(ICalculator), new WSHttpBinding(), "http://127.0.0.1:9977/calculatorservice");
                 if (host.Description.Behaviors.Find<ServiceMetadataBehavior>() == null)
                 {
                     ServiceMetadataBehavior behavior = new ServiceMetadataBehavior();
                     behavior.HttpGetEnabled = true;
-                    behavior.HttpGetUrl = new Uri("http://127.0.0.1:9999/calculatorservice");
+                    behavior.HttpGetUrl = new Uri("http://127.0.0.1:9977/calculatorservice");
                     host.Description.Behaviors.Add(behavior);
                 }
                 host.Opened += delegate
